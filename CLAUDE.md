@@ -54,3 +54,29 @@ Stop and ask. Don't guess. Don't invent file paths. Don't add features that were
 - `docs/architecture.md` — folder shape, layer rule, file size, refactor signals
 - `skills/coding-rules.md` — hard rules, naming, banned patterns
 - `skills/ai-pairing-skill.md` — how to work with AI assistants productively
+
+## MCP usage:
+- Use shadcn for reliable component structure.
+- Use Magic UI only for subtle visual polish.
+- Use 21st.dev Magic for UI inspiration and component variations before major UI builds.
+- Do not blindly copy registry components.
+- Customize all spacing, typography, colors, copy, and hierarchy.
+- Make the final site feel like a custom local business website, not a component dump.
+
+## Important:
+Do not reuse the starter layout as the final design.
+
+For every new website, create a fresh visual direction based on the business type, audience, offer, market, and conversion goal.
+
+The starter code exists only as a technical foundation.
+
+Each site must have:
+- a distinct hero layout
+- a distinct color system
+- a distinct CTA treatment
+- varied section composition
+- business-specific trust signals
+- service-specific copy
+- custom layout rhythm
+
+Avoid making multiple sites feel like reskins of the same template.
