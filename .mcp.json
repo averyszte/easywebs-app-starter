@@ -19,7 +19,7 @@
       "args": ["-y", "@21st-dev/magic@latest"],
       "env": {
         "NODE_OPTIONS": "--use-system-ca",
-        "API_KEY": "${572b3fa54364dd8c14a8046d3cd8bff5f1ae2c4769c2dd80e1db59d1137c7b8f}"
+        "API_KEY": "${TWENTY_FIRST_DEV_API_KEY}"
       }
     }
   }
