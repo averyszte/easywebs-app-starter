@@ -55,28 +55,71 @@ Stop and ask. Don't guess. Don't invent file paths. Don't add features that were
 - `skills/coding-rules.md` — hard rules, naming, banned patterns
 - `skills/ai-pairing-skill.md` — how to work with AI assistants productively
 
+---
+
+# UI / UX / MCP Rules
+
+When building user interfaces, use the available MCP servers as design and component support.
+
+Default design style:
+- Premium commercial design
+- Strong conversion hierarchy
+- High-trust product, service, or business feel
+- Bold but practical
+- Polished but not artsy
+- Custom agency-built appearance
+
+Avoid:
+- editorial design
+- generic SaaS landing pages
+- fragile minimalist layouts
+- default shadcn styling
+- excessive whitespace
+- gimmicky animations
+- crypto-style glow effects
+- vague placeholder copy
+- component-dump interfaces with no strategy
+
+Prioritize:
+- clear primary action
+- trust
+- fast user comprehension
+- strong hierarchy
+- clean onboarding
+- simple forms
+- useful dashboards
+- obvious next steps
+- mobile-first UX
+- scalable app structure
+- conversion-focused flows
+
 ## MCP usage:
 - Use shadcn for reliable component structure.
 - Use Magic UI only for subtle visual polish.
 - Use 21st.dev Magic for UI inspiration and component variations before major UI builds.
 - Do not blindly copy registry components.
+- Do not use MCP components as the full design strategy.
 - Customize all spacing, typography, colors, copy, and hierarchy.
-- Make the final site feel like a custom local business website, not a component dump.
+- Make the final interface feel custom, not like a component dump.
+
+Architecture:
+- Design this as a scalable foundation for future app screens and SEO pages where relevant.
+- Structure code so additional pages, dashboards, auth flows, onboarding flows, and settings screens can be added easily.
+- Keep reusable UI in component folders.
+- Keep business logic separated from presentation.
+- Keep project-specific strategy in docs/current-task.md or equivalent planning docs.
 
 ## Important:
-Do not reuse the starter layout as the final design.
+- Do not reuse starter layouts as the final design.
+- For every new app or website, create a fresh visual direction based on the business type, audience, offer, market, user role, and conversion goal.
+- The starter exists as a planning and execution foundation, not a visual template.
+- Each build must have a distinct layout rhythm, CTA treatment, trust strategy, and UX flow.
 
-For every new website, create a fresh visual direction based on the business type, audience, offer, market, and conversion goal.
-
-The starter code exists only as a technical foundation.
-
-Each site must have:
-- a distinct hero layout
-- a distinct color system
-- a distinct CTA treatment
-- varied section composition
-- business-specific trust signals
-- service-specific copy
-- custom layout rhythm
-
-Avoid making multiple sites feel like reskins of the same template.
+Before coding UI, first define:
+1. The target user
+2. The primary conversion/action
+3. The visual direction
+4. The component strategy
+5. The screens/flows required
+6. Which MCP tools should be used
+7. Which MCP tools should be avoided
